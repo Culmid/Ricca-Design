@@ -1,45 +1,82 @@
+/* General */
 body {
     margin: 0;
     height: 100vh;
 }
 
+.quicksand {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto-400 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto-300 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Header */
 header {
     padding: 20px;
     text-align: center;
 }
 
-.logo h1 {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    
+header h1 {
     font-size: 55px;
     margin: 5px;
 }
 
-nav ul{
+header nav ul{
     list-style: none;
     
     margin: 0;
     padding: 0;
     
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 22px;
 }
 
-nav ul li {
+header nav ul li {
     margin: 20px 0;
-    text-decoration: none;
 }
 
-a {
-    text-decoration: none;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 54px;
 }
 
-nav ul :visited , .logo h1 :visited{
-    color: black;
+footer h2 {
+    font-size: 22px;
+}
+
+footer .footer-main h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 58px;
+    padding: 0;
+    font-size: 15px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
 }
 
 @media all and (min-width: 575px) {
@@ -48,13 +85,23 @@ nav ul :visited , .logo h1 :visited{
         justify-content: space-between;
     }
 
-    nav ul{
+    header nav ul{
         display: flex;
         align-items: center;
         height: 100%;
     }
 
-    nav ul li {
+    header nav ul li {
         margin: 0 20px;
+    }
+
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    footer h2 {
+        font-size: 36px;
     }
 }
