@@ -6,14 +6,17 @@ body {
 
 .banner {
     background-color: #01213F;
-    padding: 50px 22px;
+    /* padding: 50px 22px; */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .banner-container {
     border: 8px solid #FFFFFF;
     text-align: center;
 
-    min-width: 235px;
+    /* min-width: 235px; */
 }
 
 .banner-header {
@@ -52,7 +55,7 @@ body {
     width: 100%;
 
     padding: 20px 0;
-    min-width: 125px;
+    /* min-width: 125px; */
 }
 
 .banner-link button :active {
@@ -61,4 +64,26 @@ body {
 
 :visited { /* ??? */
     color: #C48B98;
+}
+
+@media screen and (min-width: 575px) {
+    banner {
+        padding: 56px 0;
+    }
+
+    .banner-header {
+        margin: 40px 55px 0 55px;
+    }
+
+    .banner-header h2 {
+        font-size: 72px;
+    }
+
+    .banner-header h3 {
+        font-size: 50px;
+    }
+
+    .banner-link {
+        margin: 30px 92px 52px 92px;
+    }
 }
