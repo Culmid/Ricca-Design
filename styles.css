@@ -46,3 +46,15 @@ a {
 :visited { /* ??? */
     color: black;
 }
+
+@media screen and (min-width: 575px) {
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .logo-small h2 {
+        font-size: 36px;
+    }
+}
