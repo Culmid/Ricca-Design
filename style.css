@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.banner {
+    background-color: #01213F;
+    /* padding: 50px 22px; */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-container {
+    border: 8px solid #FFFFFF;
+    text-align: center;
+
+    /* min-width: 235px; */
+}
+
+.banner-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: white;
+
+    margin: 36px 36px 0 36px;
+}
+
+.banner-header h2 {
+    font-weight: 500;
+    font-size: 45px;
+    margin: 0;
+}
+
+.banner h3 {
+    font-weight: 400;
+    font-size: 38px;
+    margin: 0;
+}
+
+.banner-link {
+    margin: 30px 60px 40px 60px;
+}
+
+.banner-link button{
+    color: #C48B98;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+
+    border: 4px solid #C48B98;
+    background-color: #01213F;
+    width: 100%;
+
+    padding: 20px 0;
+    /* min-width: 125px; */
+}
+
+.banner-link button :active {
+    background-color: wheat;
+}
+
+:visited { /* ??? */
+    color: #C48B98;
+}
+
+@media screen and (min-width: 575px) {
+    banner {
+        padding: 56px 0;
+    }
+
+    .banner-header {
+        margin: 40px 55px 0 55px;
+    }
+
+    .banner-header h2 {
+        font-size: 72px;
+    }
+
+    .banner-header h3 {
+        font-size: 50px;
+    }
+
+    .banner-link {
+        margin: 30px 92px 52px 92px;
+    }
+}
