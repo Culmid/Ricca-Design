@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -40,4 +40,21 @@ nav ul a {
 
 nav ul :visited {
     color: black;
+}
+
+@media all and (min-width: 575px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
 }
