@@ -62,6 +62,7 @@ header nav ul li {
 footer {
     text-align: center;
     padding: 54px;
+    background-color: #F9F9F9;
 }
 
 footer h2 {
@@ -142,6 +143,10 @@ section ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+section ul li {
+    margin-top: 50px;
 }
 
 .product {
@@ -247,6 +252,23 @@ section ul {
     width: 35px;
 }
 
+section .load-more {
+    width: 374px;
+    height: 80px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+
+    background: #C48B98;
+    color: #FFFFFF;
+    border: none;
+
+    margin-top: 58px;
+    margin-bottom: 51px;
+}
+
 @media all and (min-width: 575px) {
     /* Header */
     header {
@@ -329,7 +351,6 @@ section ul {
         width: 395px;
     
         overflow: hidden;
-        /* margin: 20px; */
         display: flex;
         justify-content: center;
     }
@@ -340,6 +361,5 @@ section ul {
 
     .body {
         margin: 0 50px 40px 50px;
-        /* margin: 25px; */
     }
 }
