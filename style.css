@@ -1,0 +1,157 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 374px;
+    height: 508px;
+
+    box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+.product-picture {
+    height: 310px;
+
+    overflow: hidden;
+    /* margin: 20px; */
+    display: flex;
+    justify-content: center;
+}
+
+.product-picture img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.product-description {
+   width: 100%;
+   height: 198px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.title p {
+    display: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+
+    margin: 0;
+}
+
+.title h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+
+    width: 322px;
+
+    margin: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin: 0 25px 25px 25px;
+    /* margin: 25px; */
+}
+
+.prices .top {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+
+    text-decoration-line: line-through;
+    color: #8C8C8C;
+}
+
+.prices .bottom{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.buttons {
+    display: flex;
+    height: 38px;
+}
+
+.buttons .heart {
+    margin-right: 10px;
+    width: 35px;
+}
+
+@media screen and (min-width: 575px) {
+    .product {
+        flex-direction: row;
+        width: 792px;
+        height: 327px;
+    }
+
+    .title {
+        flex-direction: column;
+
+        margin: 30px 44px 0 44px;
+    }
+
+    .title h2{
+        overflow: visible;
+        white-space: normal;
+        text-overflow: ellipsis;
+    }
+
+    .title p {
+        display: inline;
+    }
+
+    .product-description {
+        height: 100%;
+        width: 395px;
+    }
+
+    .product-picture {
+        height: 100%;
+        width: 395px;
+    
+        overflow: hidden;
+        /* margin: 20px; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .product-picture img {
+        height: 100%;
+    }
+
+    .body {
+        margin: 0 50px 40px 50px;
+        /* margin: 25px; */
+    }
+}
