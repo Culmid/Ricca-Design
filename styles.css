@@ -33,7 +33,7 @@ header {
 
 header h1 {
     font-size: 55px;
-    margin: 5px;
+    margin: 5px 5px 30px 5px;
 }
 
 header nav ul{
@@ -224,7 +224,7 @@ section .load-more {
     margin-bottom: 51px;
 }
 
-@media all and (min-width: 575px) {
+@media all and (min-width: 675px) {
     /* Header */
     header {
         display: flex;
@@ -239,6 +239,10 @@ section .load-more {
 
     header nav ul li {
         margin: 0 20px;
+    }
+
+    header h1 {
+        margin: 15px 0 15px 50px;
     }
     
     /* Footer */
