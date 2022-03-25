@@ -1,11 +1,20 @@
 /* General */
 body {
   margin: 0;
-  height: 100vh;
   min-width: 400px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  background-color: #fde2d7;
+}
+
+.wrapper {
+  width: 100%;
+  flex: 1;
+  max-width: 1200px;
+  background-color: white;
 }
 
 .quicksand {
@@ -224,7 +233,7 @@ section .load-more {
   margin-bottom: 51px;
 }
 
-@media all and (min-width: 675px) {
+@media all and (min-width: 700px) {
   /* Header */
   header {
     display: flex;
