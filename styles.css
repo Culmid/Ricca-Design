@@ -34,6 +34,10 @@ section {
   align-items: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Header */
 header {
   padding: 20px;
