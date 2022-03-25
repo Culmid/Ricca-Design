@@ -131,8 +131,7 @@ section ul li {
   margin-top: 50px;
 }
 
-.product,
-.product-reverse {
+.product {
   display: flex;
   flex-direction: column;
   width: 374px;
@@ -243,7 +242,7 @@ section .load-more {
   }
 
   header h1 {
-    margin: 15px 0 15px 50px;
+    margin: 5px 0 5px 50px;
   }
 
   /* Footer */
@@ -279,8 +278,7 @@ section .load-more {
   }
 
   /* Product */
-  .product,
-  .product-reverse {
+  .product {
     width: 792px;
     height: 327px;
   }
@@ -289,7 +287,7 @@ section .load-more {
     flex-direction: row;
   }
 
-  .product-reverse {
+  li:nth-child(even) .product {
     flex-direction: row-reverse;
   }
 
